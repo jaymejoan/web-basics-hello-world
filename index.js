@@ -14,7 +14,7 @@ $(function() {
 function showAnimalTrivia() {
   // the display area will show "loading" until it is changed by displayQuestionAndAnswer
   // once the API call has finished
-  $("#results-area").text("Oh hi!...Loading...");
+  $("#results-area").text("Oh hi!...");
   fetchRandomTriviaQuestion(displayQuestionAndAnswer);
 }
 
@@ -31,7 +31,8 @@ function fetchRandomTriviaQuestion(callback) {
   // true or false trivia on animals encoded in base64
 
   // Configure your own api call at https://opentdb.com/api_config.php
-  var promise = $.get("https://opentdb.com/api.php?amount=1&category=27&type=boolean&encode=base64");
+  // var promise = $.get("https://opentdb.com/api.php?amount=1&category=27&type=boolean&encode=base64");
+  var promise = $.get("https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=boolean&encode=base64");
 
   // $.get is asynchronous, so we need to define a
   // handler for when the request is complete
