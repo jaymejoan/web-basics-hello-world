@@ -14,7 +14,7 @@ $(function() {
 function showAnimalTrivia() {
   // the display area will show "loading" until it is changed by displayQuestionAndAnswer
   // once the API call has finished
-  $("#results-area").text("Loading...");
+  $("#results-area").text("Oh hi!...Loading...");
   fetchRandomTriviaQuestion(displayQuestionAndAnswer);
 }
 
